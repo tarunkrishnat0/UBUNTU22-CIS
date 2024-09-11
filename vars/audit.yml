@@ -32,7 +32,7 @@ audit_bin_path: /usr/local/bin/
 audit_bin: "{{ audit_bin_path }}goss"
 audit_format: json
 
-audit_vars_path: "{{ audit_conf_dir }}/vars/{{ ansible_facts.hostname }}.yml"
+audit_vars_path: "{{ audit_conf_dir }}/vars/CIS.yml"
 audit_results: |
       The{% if not audit_only %} pre remediation{% endif %} audit results are: {{ pre_audit_results}}
       {% if not audit_only %}The post remediation audit results are: {{ post_audit_results }}{% endif %}
